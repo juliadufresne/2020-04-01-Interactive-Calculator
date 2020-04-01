@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Interactive Calculator</title>
 </head>
 <body>
+    <div class="content">
+        <div class="image">
+            <h1>Tip Calculator</h1>
+            <img src="./assets/undraw_payments_21w6.svg" alt="">
+        </div>
+        <form action="" id="target">
+            <div class="formField">
+                <label for="amount">Enter amount</label>
+                <div class="flex">
+                    <span class="currency">$</span>
+                    <input class="money" id="amount" name="amount" type="text" maxlength="15" />
+                </div>
+            </div>
     
+            <div class="formField">
+            <label for="serviceQuality">Service Quality</label>
+                <div class="serviceQuality">
+                    <label class="service">
+                        <input class="radio" type="radio" name="radiobutton" value="25">
+                        <i class="far fa-grin"></i>
+                        <p>25%</p>
+                    </label>
+    
+                    <label class="service">
+                        <input class="radio" type="radio" name="radiobutton" value="20">
+                        <i class="far fa-smile"></i>
+                        <p>20%</p>
+                    </label>
+    
+                    <label class="service">
+                        <input class="radio" type="radio" name="radiobutton" value="15">
+                        <i class="far fa-meh"></i>
+                        <p>15%</p>
+                    </label>
+    
+                    <label class="service">
+                        <input class="radio" type="radio" name="radiobutton" value="10">
+                        <i class="far fa-frown"></i>
+                        <p>10%</p>
+                    </label>
+    
+                    <label class="service">
+                        <input class="radio" type="radio" name="radiobutton" value="5">
+                        <i class="far fa-angry"></i>
+                        <p>5%</p>
+                    </label>
+                </div>
+    
+                <input type="submit" class="submit" value="Submit">
+    
+                <div class="tip">
+                    <!-- Print here -->
+                </div>
+    
+                <div class="bill">
+                    <!-- Print here -->
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script src="https://kit.fontawesome.com/cd522f97ba.js" crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src="./script.js"></script>
 </body>
 </html>
